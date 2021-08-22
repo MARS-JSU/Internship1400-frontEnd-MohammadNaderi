@@ -1,0 +1,243 @@
+
+	/*---------------	Body Style ---------------*/
+	body
+	{
+		margin: auto;
+		width:90%;
+		font-family: "karma" ;
+		font-weight: 400;
+	}
+	/*---------------	Body Style ---------------*/
+	/*---------------	Header Style ---------------*/
+	#divHeader
+	{
+		position: fixed;
+		width: inherit;  /* پوزیشن فیکسد باعث میشد که عرض به اندازه والد مقیاس نگیره . برای همین از این خط استفاده شد*/
+		height : 50px;
+		background-color : white;
+		text-align : center;
+		display: flex;
+		margin : auto;
+		font-size : 18pt;
+	}
+	#divHeader div
+	{
+		width : 33%;
+		margin : auto;
+	}
+	
+	#frameBars ul
+	{
+		padding : 5px ;
+		width :35px;
+		height: auto;
+		list-style : none;
+		overflow : hidden;
+	}
+	#frameBars ul:hover
+	{
+		background-color: rgb(190,190,190);
+	}
+	#frameBars li
+	{
+		width: 100%;
+		height: 5px;
+		background-color: #333;
+		margin-bottom: 5px;
+	}
+	#frameBars li:last-child
+	{
+		margin-bottom: 0px;
+	}
+	/*---------------	Header Style ---------------*/
+	/*---------------	Main Style ---------------*/
+	.main
+	{
+		padding-top : 50px;
+	}
+	.row
+	{
+		padding: 5px 25px 5px 25px;
+		/*margin:1px auto 1px;*/
+		height:auto;
+		width:auto;
+		overflow: hidden;
+	}
+	.mainImages
+	{
+		/*white-space: nowrap;wrap;*/
+		text-align: justify;
+		/*text-justify: inter-word;*/
+		width  : 25%;
+		float : left;
+		/*margin : 1px auto 1px;*/
+		height : auto;
+		/*display: grid;*/			/*این خط و خط بعدی باید در والد قرار بگیرند*/
+		/*place-items: center;*/	/*باعث میشود محتویات خط بعدی در وسط والد قرار بگیرد*/
+		
+	}
+	.mainImages img
+	{
+		width  : 90%;
+		/*height : auto;*/
+		/*width  : 270px;
+		height : 400px;*/
+	}
+	.mainImages p#title
+	{
+		text-align: center;
+		font-size:16pt;
+		font-weight:bold;
+	}
+	.mainImages p
+	{
+		text-align : justify;
+		padding-left :20px;
+		padding-right :20px;
+		text-align: center;
+	}
+	/*---------------	Main Style ---------------*/
+	/*---------------	PageNumbers Style ---------------*/
+	#pageNumbers
+	{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#pageNumbers li
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		color : black;
+		background-color: white;
+		width: 35px;
+		height: 35px;
+		text-align : center;
+		
+	}
+	#pageNumbers li:nth-child(2)
+	{
+		background-color : black;
+		color : white;
+		
+	}
+	#pageNumbers li:hover
+	{
+		background-color : black;
+		color : white;
+	}
+	#pageNumbers li:nth-child(2):hover
+	{
+		background-color : rgb(124,124,124);
+		color : black;
+		
+	}
+	/*---------------	PageNumbers Style ---------------*/
+	/*---------------	chefDescription Style ---------------*/
+	.chefDescription
+	{
+		weight: bold;
+		text-align : center;
+	}
+	/*---------------	chefDescription Style ---------------*/
+	/*---------------	Footer Style ---------------*/
+	.footer
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: flex-start;
+		align-content: center;
+		margin-bottom : 50px;
+	}
+	
+	.footer div
+	{
+		box-sizing: border-box;
+		margin: 10px 10px 0 0;
+		/*outline: 1px dotted red;*/
+		width: calc(1/3*100% - (1 - 1/3)*10px);
+	}
+	
+	#footerCenter div
+	{
+		
+		width:90%;
+		height:70px;
+		/*margin : 1px;*/
+		
+		/*display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;*/
+		
+	}
+	#footerCenter div:hover
+	{
+		background-color:rgb(192,192,192);
+	}
+	
+	#footerCenter ul
+	{
+		list-style-type : none;
+		display: inline-block;
+	}
+	
+	#footerCenter li
+	{
+		float:left;
+	}
+	#footerCenter img
+	{
+		width:50px;
+		margin-right : 10px;
+		display: inline;
+	}
+	
+	#footerRight span
+	{
+		padding : 3px;
+		margin : 3px;
+		background-color : rgb(97,97,97);
+		line-height : 2.5;
+		color:white;
+		font-size : 10pt;
+	}
+	#footerRight span:nth-child(2)
+	{
+		background-color : black;
+	}
+	/*---------------	Footer Style ---------------*/
+	/*---------------	menu Style ---------------*/
+	#menu
+	{
+		display:none;
+		background-color:white;
+		width:35%;
+		height:100%;
+		/*z-index:-1;*/
+		position : fixed;
+		overflow : hidden;
+		font-size : 18pt;
+	}
+	#menu a
+	{
+		display :block;
+		width : 100%;
+		height: 50px;
+		text-align : left;
+		padding-top : 25px;
+		padding-left : 25px;
+		color: black;
+		text-decoration : none;
+	}
+	#menu a:hover
+	{
+		background-color:rgb(204,204,204);
+	}
+	/*---------------	menu Style ---------------*/
