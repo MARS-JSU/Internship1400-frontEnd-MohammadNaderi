@@ -7,5 +7,6 @@
 	function closeMenuBar(ts)
 	{
 		ts.parentNode.style.display = 'none';
+		temp = ts.parentNode;
 	}
 	

@@ -9,7 +9,7 @@
 	}
 	/*---------------	Body Style ---------------*/
 	/*---------------	Header Style ---------------*/
-	#divHeader
+	header
 	{
 		position: fixed;
 		width: inherit;  /* پوزیشن فیکسد باعث میشد که عرض به اندازه والد مقیاس نگیره . برای همین از این خط استفاده شد*/
@@ -19,36 +19,24 @@
 		display: flex;
 		margin : auto;
 		font-size : 18pt;
+		justify-content:space-between;
 	}
-	#divHeader div
+	header div
 	{
+		
 		width : 33%;
 		margin : auto;
+		
 	}
-	
-	#frameBars ul
-	{
-		padding : 5px ;
-		width :35px;
-		height: auto;
-		list-style : none;
-		overflow : hidden;
-	}
-	#frameBars ul:hover
+	#frameBars i:hover
 	{
 		background-color: rgb(190,190,190);
 	}
-	#frameBars li
+	#frameBars i
 	{
-		width: 100%;
-		height: 5px;
-		background-color: #333;
-		margin-bottom: 5px;
+		padding : 3px;
 	}
-	#frameBars li:last-child
-	{
-		margin-bottom: 0px;
-	}
+	
 	/*---------------	Header Style ---------------*/
 	/*---------------	Main Style ---------------*/
 	.main
@@ -143,7 +131,7 @@
 	}
 	/*---------------	chefDescription Style ---------------*/
 	/*---------------	Footer Style ---------------*/
-	.footer
+	footer
 	{
 		display: flex;
 		flex-direction: row;
@@ -154,7 +142,7 @@
 		margin-bottom : 50px;
 	}
 	
-	.footer div
+	footer div
 	{
 		box-sizing: border-box;
 		margin: 10px 10px 0 0;
