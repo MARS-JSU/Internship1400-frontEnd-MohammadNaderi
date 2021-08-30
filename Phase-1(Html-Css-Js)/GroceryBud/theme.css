@@ -1,0 +1,35 @@
+
+	body
+	{
+		background-image: url('background.jfif');
+		background-color: rgb(207, 207, 207);
+		font-family: "Agent Orange" ;
+		font-weight: 400;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: stretch;
+	}	
+	.container
+	{
+		width: 50%;
+		height: auto;
+		background-color: rgba(255, 255, 255, 0.849);
+		justify-content:space-between;
+		text-align: center;
+
+	}
+	.icon img
+	{
+		width: 20px;
+		height: auto;
+	}
+	.icon:hover
+	{
+		background-color: rgba(47, 79, 79, 0.521);
+	}
+	.item:hover
+	{
+		background-color: rgba(47, 79, 79, 0.521);
+	}
