@@ -5,7 +5,7 @@
         <script type="text/javascript" src="function.js"></script>
     </head>
     <body onload="funcLoad()">
-        <div class="container">
+        <div id="container">
             <h1> Grocery Bud </h1>
             <br>
             <input type="text" id="txtBox" />
@@ -16,5 +16,15 @@
             <br>
             <a href="" onclick="funcClearItems()">Clear Items</a>
         </div>
+            <!-- modal box-->
+                <div id="modalBox">
+                    <span> Are you sure ? </span>
+                    <br>
+                    <div>
+                        <input type="button" value="Yes" onclick="funcDelete()">
+                        <input type="button" value="No" onclick="closeModalBox()">
+                    </div>
+                </div>
+            <!-- modal box-->
     </body>
 </html>

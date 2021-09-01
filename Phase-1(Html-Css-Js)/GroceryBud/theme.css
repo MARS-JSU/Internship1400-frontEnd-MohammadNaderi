@@ -2,6 +2,8 @@
 	body
 	{
 		background-image: url('background.jfif');
+		/*background-image: url('background(2).jpg');*/
+		background-size: cover;
 		background-color: rgb(207, 207, 207);
 		font-family: "Agent Orange" ;
 		font-weight: 400;
@@ -11,7 +13,7 @@
 		align-items: center;
 		align-content: stretch;
 	}	
-	.container
+	#container
 	{
 		width: 50%;
 		height: auto;
@@ -32,4 +34,22 @@
 	.item:hover
 	{
 		background-color: rgba(47, 79, 79, 0.521);
+	}
+
+	#modalBox
+	{
+		border: 1px black dashed;
+		background-color: burlywood;
+		width: 300px;
+		display: none;
+		z-index: 5;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: stretch;
+	}
+	#modalBox div
+	{
+		flex-direction: row;
 	}
